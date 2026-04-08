@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBD Puja💖 🎉</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+            background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/13690.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+            margin-left: 10%;
+            z-index: 2;
+            position: relative;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3rem;
+            color: #ff6b6b;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            background: linear-gradient(45deg, #ff6b6b, #ffa500);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 15px rgba(255, 107, 107, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 20px rgba(255, 107, 107, 0.4);
+        }
+
+        .btn:active {
+            transform: translateY(-1px);
+        }
+
+        .floating-elements {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .floating-elements div {
+            position: absolute;
+            font-size: 2rem;
+            animation: float 6s linear infinite;
+            opacity: 0.7;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(100vh) rotate(0deg); }
+            100% { transform: translateY(-10vh) rotate(360deg); }
+        }
+
+        .heart {
+            color: #ff6b6b;
+        }
+
+        .star {
+            color: #ffd700;
+        }
+
+        .balloon {
+            color: #ff1493;
+        }
+
+        .card-image {
+            width: 100%;
+            max-width: 320px;
+            height: auto;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
+            border: 3px solid #ff6b6b;
+            transition: all 0.3s ease;
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+
+        .card-image:hover {
+            transform: scale(1.05) rotateY(10deg);
+            box-shadow: 0 15px 40px rgba(255, 107, 107, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="floating-elements">
+        <div class="heart" style="left: 10%; animation-delay: 0s;">❤️</div>
+        <div class="star" style="left: 20%; animation-delay: 1s;">⭐</div>
+        <div class="balloon" style="left: 30%; animation-delay: 2s;">🎈</div>
+        <div class="heart" style="left: 40%; animation-delay: 3s;">❤️</div>
+        <div class="star" style="left: 50%; animation-delay: 4s;">⭐</div>
+        <div class="balloon" style="left: 60%; animation-delay: 5s;">🎈</div>
+        <div class="heart" style="left: 70%; animation-delay: 6s;">❤️</div>
+        <div class="star" style="left: 80%; animation-delay: 7s;">⭐</div>
+        <div class="balloon" style="left: 90%; animation-delay: 8s;">🎈</div>
+    </div>
+    <div class="container">
+        <h1>Happy Birthday, Puja💖 🎂</h1>
+        <p>Dear Puja, today is your special day! Click the button below to reveal a surprise just for you. 💖</p>
+        <img src="11.jpg" alt="Birthday Gift" class="card-image">
+        <button class="btn" onclick="window.location.href='birthday.html'">HIT Me Bby</button>
+    </div>
+
+    <script>
+        // Add more floating elements dynamically
+        const elements = ['❤️', '⭐', '🎈', '🌟', '🎉'];
+        for (let i = 0; i < 20; i++) {
+            const el = document.createElement('div');
+            el.textContent = elements[Math.floor(Math.random() * elements.length)];
+            el.style.left = Math.random() * 100 + '%';
+            el.style.animationDelay = Math.random() * 6 + 's';
+            el.style.fontSize = (Math.random() * 1.5 + 1) + 'rem';
+            document.querySelector('.floating-elements').appendChild(el);
+        }
+    </script>
+</body>
+</html></content>
+
